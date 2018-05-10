@@ -1,0 +1,29 @@
+
+canvas{    
+    background-color: lightgoldenrodyellow;
+}
+
+#comandos{
+    background-color: white;
+    height: 80px;
+    vertical-align: middle;
+}
+
+#comandos button{
+    width: 80px;
+    height: 60px;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+.a1{
+    background: linear-gradient(to bottom, #fef6e7 0%, #ffffff 79%);
+}
+
+.a2{
+    background: linear-gradient(to bottom, #fef0d6 0%, #ffffff 79%);
+}
+
+.a3{
+    background: linear-gradient(to bottom, #fee9c2 0%, #ffffff 79%);
+}

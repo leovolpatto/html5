@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <h3>Contador de cliques</h3>
+        <h4 id="data"></h4>
+        <h3 id="display"></h3>
+        <button onclick="contar()">Contar</button>
+        
+        <script>
+            
+            function contar(){
+                var total = localStorage.getItem("clicks");
+                total ++;
+                localStorage.setItem("clicks", total);
+                
+                document.getElementById("display").innerHTML = "Voce clicou " + total + " vezes desde a primeira vez que acessou esta pagina";
+                
+                document.title = total;
+            }
+            
+            function data(){
+                var data = localStorage.getItem("data");
+                if(data == null){
+                    localStorage.setItem("data", new Date());
+                }
+                
+                document.getElementById("data").innerHTML = "Voce acessou pela primeira vez dia " + localStorage.getItem("data");
+            }
+            
+            data();
+            
+        </script>
+    </body>
+</html>
